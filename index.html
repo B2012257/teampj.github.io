@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/grid.css">
+    <title>ThucHanh Grid System</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+           
+        }
+        .course-item {
+            background-color: hotpink;
+            height: 260px;
+        }
+        h1 {
+            color: #fff;           
+             line-height: 260px;
+             margin: 0;
+        }
+        .category {
+            background: orange;
+            color: #fff;
+            height: 260px;
+        }
+        ul {
+            margin-top: 0;
+        }
+        @media (max-width: 1023px) {
+            .course-item {
+            margin-top: 10px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            
+            <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
